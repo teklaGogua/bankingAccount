@@ -1,0 +1,174 @@
+/* 1536px of screen */
+@media (max-width: 96em) {
+  html {
+    font-size: 50%;
+  }
+
+  .sidebar {
+    max-width: 47rem;
+  }
+
+  main {
+    margin-left: 53rem;
+  }
+}
+
+/* 1200px of screen */
+@media (max-width: 96em) {
+  .card-wrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 2rem;
+    scrollbar-width: none;
+  }
+
+  .card-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    min-width: 30rem;
+    flex: 0 0 auto;
+  }
+
+  .card:hover {
+    transform: translateY(0);
+  }
+
+  .categories-wrapper {
+    gap: 5rem;
+  }
+}
+
+/* 1000px of screen */
+@media (max-width: 62.5em) {
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid rgba(247, 164, 222, 0.5);
+  }
+
+  .navbar li a {
+    padding: 1.5rem;
+    justify-content: center;
+  }
+
+  .profile {
+    margin-top: 2rem;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 5rem;
+  }
+}
+
+/* 620px of screen */
+@media (max-width: 38.75em) {
+  .chart-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .y-axis {
+    display: none;
+  }
+
+  .chart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .bar {
+    position: relative;
+    width: var(--height);
+    height: 4rem;
+    background: linear-gradient(90deg, #78d3b4, #78d3b4);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+
+  .bar:nth-child(odd) {
+    background: linear-gradient(90deg, #c687f8, #aa4ddb);
+  }
+
+  .bar::before {
+    content: attr(data-amount);
+    position: absolute;
+    right: -3rem;
+    background: #333;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateX(0.5rem);
+    transition: opacity 0.3s, transform 0.3s;
+    white-space: nowrap;
+  }
+
+  .bar:hover::before {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+
+  .x-axis {
+    display: none;
+  }
+
+  .bar:nth-child(1)::after {
+    content: "Mon";
+  }
+  .bar:nth-child(2)::after {
+    content: "Tue";
+  }
+  .bar:nth-child(3)::after {
+    content: "Wed";
+  }
+  .bar:nth-child(4)::after {
+    content: "Thu";
+  }
+  .bar:nth-child(5)::after {
+    content: "Fri";
+  }
+  .bar:nth-child(6)::after {
+    content: "Sat";
+  }
+  .bar:nth-child(7)::after {
+    content: "Sun";
+  }
+
+  .bar::after {
+    position: absolute;
+    left: -5rem;
+    color: var(--font-color);
+    font-size: 1.4rem;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  .transactions {
+    margin: -4rem;
+  }
+
+  .transactions-header {
+    margin: 2rem;
+  }
+
+  .month-label::before,
+  .month-label::after {
+    width: 30%;
+  }
+}
