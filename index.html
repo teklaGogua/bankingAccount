@@ -4,28 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banking Account</title>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <aside class="sidebar">
-      <div class="logo">
-        <img src="images/main-icon.png" alt="main-icon"/>
-        <h1 class="title">TeklaPay</h1>
+      <div class="top-bar">
+        <div class="logo">
+          <img src="images/main-icon.png" alt="main-icon" />
+          <h1 class="title">TeklaPay</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="images/dashboard.png" alt="dashboard" />
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/transaction.png" alt="dashboard" />
+                <span>Transactions</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <img src="images/dashboard.png" alt="dashboard">
-            <span>Dashboard</span>
-          </li>
-          <li>
-            <img src="images/transaction.png" alt="dashboard">
-            <span>Transactions</span>
-          </li>
-        </ul>
-      </nav>
-      <div class="account">
-        <img src="" alt="profile-picture">
-        <p></p>
+      <div class="profile">
+        <img src="images/teklaPfp.jpg" alt="profile-picture" />
+        <p class="username">Tekla gogua</p>
       </div>
     </aside>
     <main>
