@@ -15,3 +15,7 @@ A **pure HTML/CSS** banking dashboard with dark/light theme toggle, responsive d
 - **CSS3** – Flexbox, Grid, custom properties (`:root` vars)  
 - **Media Queries** – Fully responsive layout  
 - **CSS `:has()`** – Theme toggle logic (no JS!)  
+
+## Links 💻 
+- Solution URL: https://github.com/teklaGogua/bankingAccount/
+- Live Site URL: https://teklagogua.github.io/bankingAccount/
