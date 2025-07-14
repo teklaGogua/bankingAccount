@@ -4,6 +4,7 @@
   --background-color: #0b0d11;
   --font-color: #fffafa;
   --hover-color: #f7a4de;
+  --lable-color: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -27,11 +28,17 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 4rem;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(247, 164, 222, 0.5);
   padding-bottom: 4rem;
   padding-left: 4rem;
-  border-bottom: 1px solid rgba(247, 164, 222, 0.5);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 4rem;
 }
 
 .logo img {
@@ -115,4 +122,74 @@ main {
 
 .sub-title {
   font-size: 3.5rem;
+}
+
+/* Theme Toggle Styles */
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.theme-switch {
+  display: none;
+}
+
+.theme-label {
+  position: relative;
+  display: inline-block;
+  width: 7.5rem;
+  height: 4rem;
+  background-color: #333;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.theme-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  transition: opacity 0.3s;
+}
+
+.theme-icon:first-child {
+  left: 0.5rem;
+  opacity: 1;
+}
+
+.theme-icon:last-child {
+  right: 0.5rem;
+  opacity: 0;
+}
+
+.theme-switch:checked + .theme-label {
+  background-color: #f7a4de;
+}
+
+.theme-switch:checked + .theme-label .theme-icon:first-child {
+  opacity: 0;
+}
+
+.theme-switch:checked + .theme-label .theme-icon:last-child {
+  opacity: 1;
+}
+
+:root:has(.theme-switch:checked) {
+  --background-color: #fffafa;
+  --font-color: #0b0d11;
+  --lable-color: rgba(0, 0, 0, 0.7);
+}
+
+:root:has(.theme-switch:checked) .sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+:root:has(.theme-switch:checked) .navbar li img {
+  filter: brightness(0) invert(0);
+}
+
+:root:has(.theme-switch:checked) .navbar li a:hover img {
+  filter: invert(75%) sepia(80%) saturate(500%) hue-rotate(275deg);
 }

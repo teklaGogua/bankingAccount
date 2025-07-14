@@ -13,8 +13,17 @@
     <aside class="sidebar">
       <div class="top-bar">
         <div class="logo">
-          <img src="../images/nav/main-icon.png" alt="main-icon" />
-          <h1 class="title">TeklaPay</h1>
+          <div class="logo-container">
+            <img src="../images/nav/main-icon.png" alt="main-icon" />
+            <h1 class="title">TeklaPay</h1>
+          </div>
+          <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch" />
+            <label for="theme-switch" class="theme-label">
+              <span class="theme-icon">🌙</span>
+              <span class="theme-icon">☀️</span>
+            </label>
+          </div>
         </div>
         <nav class="navbar">
           <ul>
@@ -42,88 +51,6 @@
       <section class="transactions">
         <div class="transactions-header">
           <h3 class="sub-title">Transactions</h3>
-        </div>
-        <div class="month-section">
-          <div class="month-label">September</div>
-          <div class="transactions-list">
-            <div class="transactions-list">
-              <div class="transaction">
-                <div class="transaction-left">
-                  <div class="transaction-icon">
-                    <img
-                      src="../images/transactions/electricity.png"
-                      alt="Electricity Bill"
-                    />
-                  </div>
-                  <div>
-                    <p class="transaction-title">Electricity Bill</p>
-                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
-                  </div>
-                </div>
-                <div class="transaction-amount">-$120</div>
-              </div>
-              <div class="transaction">
-                <div class="transaction-left">
-                  <div class="transaction-icon">
-                    <img
-                      src="../images/transactions/school.png"
-                      alt="School fees"
-                    />
-                  </div>
-                  <div>
-                    <p class="transaction-title">School fees</p>
-                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
-                  </div>
-                </div>
-                <div class="transaction-amount">-$120</div>
-              </div>
-              <div class="transaction">
-                <div class="transaction-left">
-                  <div class="transaction-icon">
-                    <img
-                      src="../images/transactions/insurance.png"
-                      alt="Insurance expense"
-                    />
-                  </div>
-                  <div>
-                    <p class="transaction-title">Insurance expense</p>
-                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
-                  </div>
-                </div>
-                <div class="transaction-amount">-$120</div>
-              </div>
-              <div class="transaction">
-                <div class="transaction-left">
-                  <div class="transaction-icon">
-                    <img
-                      src="../images/transactions/groceries.png"
-                      alt="Groceries ordered"
-                    />
-                  </div>
-                  <div>
-                    <p class="transaction-title">Groceries ordered</p>
-                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
-                  </div>
-                </div>
-                <div class="transaction-amount">-$120</div>
-              </div>
-              <div class="transaction">
-                <div class="transaction-left">
-                  <div class="transaction-icon">
-                    <img
-                      src="../images/transactions/house-rent.png"
-                      alt="House rent"
-                    />
-                  </div>
-                  <div>
-                    <p class="transaction-title">House rent</p>
-                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
-                  </div>
-                </div>
-                <div class="transaction-amount">-$120</div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="month-section">
           <div class="month-label">October</div>
@@ -203,6 +130,89 @@
                   </div>
                 </div>
                 <div class="transaction-amount">-$210</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="month-section">
+          <div class="month-label">September</div>
+          <div class="transactions-list">
+            <div class="transactions-list">
+              <div class="transaction">
+                <div class="transaction-left">
+                  <div class="transaction-icon">
+                    <img
+                      src="../images/transactions/electricity.png"
+                      alt="Electricity Bill"
+                    />
+                  </div>
+                  <div>
+                    <p class="transaction-title">Electricity Bill</p>
+                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
+                  </div>
+                </div>
+                <div class="transaction-amount">-$120</div>
+              </div>
+              <div class="transaction">
+                <div class="transaction-left">
+                  <div class="transaction-icon">
+                    <img
+                      src="../images/transactions/school.png"
+                      alt="School fees"
+                    />
+                  </div>
+                  <div>
+                    <p class="transaction-title">School fees</p>
+                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
+                  </div>
+                </div>
+                <div class="transaction-amount">-$120</div>
+              </div>
+              <div class="transaction">
+                <div class="transaction-left">
+                  <div class="transaction-icon">
+                    <img
+                      src="../images/transactions/insurance.png"
+                      alt="Insurance expense"
+                    />
+                  </div>
+                  <div>
+                    <p class="transaction-title">Insurance expense</p>
+                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
+                  </div>
+                </div>
+                <div class="transaction-amount">-$120</div>
+              </div>
+              <div class="transaction">
+                <div class="transaction-left">
+                  <div class="transaction-icon">
+                    <img
+                      src="../images/transactions/groceries.png"
+                      alt="Groceries ordered"
+                    />
+                  </div>
+                  <div>
+                    <p class="transaction-title">Groceries ordered</p>
+                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
+                  </div>
+                </div>
+                <div class="transaction-amount">-$120</div>
+              </div>
+              <div class="transaction">
+                <div class="transaction-left">
+                  <div class="transaction-icon">
+                    <img
+                      src="../images/transactions/house-rent.png"
+                      alt="House rent"
+                    />
+                  </div>
+                  <div>
+                    <p class="transaction-title">House rent</p>
+                    <p class="transaction-date">09 Sep 2022 at 02:35</p>
+                  </div>
+                </div>
+                <div class="transaction-amount">-$120</div>
               </div>
             </div>
           </div>

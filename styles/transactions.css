@@ -32,6 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.transaction-icon:hover {
+  background-color: #4b4a4a;
 }
 
 .transaction-icon img {
@@ -47,7 +52,7 @@
 
 .transaction-date {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--lable-color);
 }
 
 .transaction-amount {
@@ -62,7 +67,7 @@
 .month-label {
   text-align: center;
   font-size: 2rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--lable-color);
   margin: 3rem 0;
   position: relative;
 }
@@ -74,7 +79,7 @@
   top: 50%;
   width: 40%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--lable-color);
 }
 
 .month-label::before {
