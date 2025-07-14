@@ -1,4 +1,9 @@
 
+.header {
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+
 /* CARDS */
 .balance {
   margin: 2rem 0;
